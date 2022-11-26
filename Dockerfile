@@ -24,6 +24,7 @@ RUN apt-get -y install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev
 RUN apt-get -y install libavformat-dev libpq-dev libxine2-dev libglew-dev
 RUN apt-get -y install libtiff5-dev zlib1g-dev libjpeg-dev libavcodec-dev libavformat-dev
 RUN apt-get -y install libavutil-dev libpostproc-dev libeigen3-dev python3-dev
+RUN apt-get -y install nano
 RUN pip install conan numpy pandas
 
 RUN cd /opt/ &&\
