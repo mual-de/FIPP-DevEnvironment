@@ -1,0 +1,6 @@
+[submodule "FIPP"]
+	path = FIPP
+	url = https://github.com/mual-de/FIPP.git
+[submodule "FIPP-Plugins"]
+	path = FIPP-Plugins
+	url = https://github.com/mual-de/FIPP-Plugins.git
