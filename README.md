@@ -12,10 +12,10 @@ The main purpose of this repository is to provide a development environment for 
 
 ## Setup
 Clone this repository and open it as an docker container via vscode. First run:
-'git submodule update --init --recursive' to get all submodules cloned inside in their actual state.
+`git submodule update --init --recursive` to get all submodules cloned inside in their actual state.
 
 Edit conan config for c++11 and Debug config as mentioned in FIPP repository:
-'''bash
+```bash
 [settings]
 os=Linux
 os_build=Linux
@@ -24,10 +24,10 @@ arch_build=x86_64
 compiler=gcc
 compiler.version=11
 compiler.libcxx=libstdc++11
-build_type=Debug
-'''
+build_type=Debug```
+
 Then install FIPP
-'''bash
+```bash
 cd FIPP
 mkdir build
 cd build
@@ -36,6 +36,6 @@ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_VERBOSE_MAKEFILE=ON ..
 cmake --build ..
 make 
 make install
-'''
+```
 Then FIPP will be installed inside /usr/local/lib/FIPP.
 This is necessary for developing plugins.
