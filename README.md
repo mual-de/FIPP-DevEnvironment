@@ -3,8 +3,8 @@ This repository contains a whole development environment for the fast image proc
 
 It combines several repositories:
 
-- FIPP (core library)
-- FIPP-Plugins
+- [FIPP (core library)](https://github.com/mual-de/FIPP)
+- [FIPP-Plugins](https://github.com/mual-de/FIPP-Plugins)
 - FIPP-ImageProcessing
 
 Additionally a docker file for nvidia-docker is included. All Repositories are going to get cloned inside this container.
