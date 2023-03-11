@@ -63,7 +63,15 @@
     "any": "cpp",
     "optional": "cpp",
     "iomanip": "cpp",
-    "complex": "cpp"
+    "complex": "cpp",
+    "codecvt": "cpp",
+    "bitset": "cpp",
+    "__hash_table": "cpp",
+    "__split_buffer": "cpp",
+    "__tree": "cpp",
+    "queue": "cpp",
+    "stack": "cpp",
+    "__nullptr": "cpp"
   },
   "C_Cpp_Runner.msvcBatchPath": "",
   "C_Cpp_Runner.cCompilerPath": "/usr/bin/gcc",

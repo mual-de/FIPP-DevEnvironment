@@ -19,6 +19,25 @@
           "ignoreFailures": true
         }
       ]
+    },
+    {
+      "name": "fipp_run debugger",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": ["FIPP/examples/testPipeline.yml"],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/workspaces/FIPP-DevEnvironment/",
+      "program": "/workspaces/FIPP-DevEnvironment/build/FIPP/bin/fipp_run",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }

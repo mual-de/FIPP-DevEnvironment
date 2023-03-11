@@ -2,7 +2,7 @@
 FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
 
 # Arguments for Installation procedure
-ARG OPENCV_VERSION=4.5.3
+ARG OPENCV_VERSION=4.6.0
 ARG DEBIAN_FRONTEND="noninteractive" 
 
 # Update apps on the base image
@@ -57,4 +57,4 @@ RUN cd /opt/ &&\
 # Run the output program from the previous step
 CMD ["bash"]
 
-LABEL Name=FIPP_Complete_Developement Version=0.0.2
+LABEL Name=FIPP_Development Version=0.0.3
