@@ -39,3 +39,6 @@ make install
 ```
 Then FIPP will be installed inside /usr/local/lib/FIPP.
 This is necessary for developing plugins.
+Check if ldconfig and LD_LIBRARY_PATH are correct:
+`echo $LD_LIBRARY_PATH` should output: `/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/lib:/usr/local/lib/FIPP`
+Add missing dirs with `LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<missing_path>`

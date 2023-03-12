@@ -2,7 +2,7 @@
 FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
 
 # Arguments for Installation procedure
-ARG OPENCV_VERSION=4.6.0
+ARG OPENCV_VERSION=4.5.3
 ARG DEBIAN_FRONTEND="noninteractive" 
 
 # Update apps on the base image
@@ -25,7 +25,7 @@ RUN apt-get -y install libavformat-dev libpq-dev libxine2-dev libglew-dev
 RUN apt-get -y install libtiff5-dev zlib1g-dev libjpeg-dev libavcodec-dev libavformat-dev
 RUN apt-get -y install libavutil-dev libpostproc-dev libeigen3-dev python3-dev
 RUN apt-get -y install nano
-RUN pip install conan numpy pandas
+RUN pip install conan==1.59.0 numpy pandas
 
 RUN cd /opt/ &&\
     # Download and unzip OpenCV and opencv_contrib and delte zip files
@@ -53,6 +53,7 @@ RUN cd /opt/ &&\
     ldconfig &&\
     # Remove OpenCV sources and build folder
     rm -rf /opt/opencv-${OPENCV_VERSION} && rm -rf /opt/opencv_contrib-${OPENCV_VERSION}
+
 
 # Run the output program from the previous step
 CMD ["bash"]
